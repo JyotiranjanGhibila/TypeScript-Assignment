@@ -1,0 +1,23 @@
+.note-con{
+    width: auto;
+    height: auto;
+    margin: 7rem 0 0 0;
+
+}
+.note-box{
+    width: 40%;
+    margin: auto;
+    border: 1px solid gray;
+    height: 6rem ;
+    background-color: antiquewhite;
+    margin-bottom: 2rem;
+}
+.low{
+    background-color: rgb(88, 233, 88);
+}
+.medium{
+    background-color: rgb(230, 174, 70);
+}
+.high{
+    background-color: rgb(241, 74, 74);
+}

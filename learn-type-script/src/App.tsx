@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 import UserCard from "./components/RCT101-E1-Typesc/UserCard";
+import Main from "./components/Form_Handle/Main";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         followers={999}
         address="Marvel x-men"
       />
+      <Main/>
     </div>
   );
 }

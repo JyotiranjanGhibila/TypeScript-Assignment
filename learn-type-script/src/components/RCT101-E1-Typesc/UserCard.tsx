@@ -16,23 +16,26 @@ const UserCard = ({ name, avatar, posts, followers, address }: UsersProps) => {
   };
 
   return (
-    <div>
-      <img src={avatar} alt="x-men" style={{ width: "40%" }} />
-      <h2>{name}</h2>
-      <p>{address}</p>
-      <p>Posts {posts}</p>
-      <p>followers {followers}</p>
-      <button onClick={handleToggle}>{toggle ? "Follow" : "following"}</button>
-      <hr />
+    <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", flexDirection: "column", width: "auto" }}>
+        <img src={avatar} alt="x-men" style={{ width: "20%" }} />
+        <p>{name}</p>
+        <p>{address}</p>
+        <p>Posts {posts}</p>
+        <p>followers {followers}</p>
+        <button onClick={handleToggle}>
+          {toggle ? "Follow" : "following"}
+        </button>
+      </div>
+
       {Users?.map((el, i) => {
         return (
           <div key={el.id}>
-            <img src={el.avatar} alt="x-men" style={{ width: "40%" }} />
+            <img src={el.avatar} alt="x-men" style={{ width: "20%" }} />
             <h2>{el.name}</h2>
             <p>{el.address}</p>
             <p>Posts {posts}</p>
             <p>followers {el.followers}</p>
-            
           </div>
         );
       })}
